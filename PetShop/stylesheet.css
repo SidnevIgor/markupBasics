@@ -1,0 +1,150 @@
+body{
+	margin: 0;
+}
+header{
+	height: 300px;
+	width: 100%;
+}
+main{
+}
+#sel1{
+	height: 23px;
+	width: 23px;
+	background-size: 23px 23px;
+	background-image: url("square.png");
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+b{
+	text-decoration: line-through;
+	display: inline-block;
+	color: red;
+	font-size: 15px;
+}
+#sel1:checked{
+	height: 25px;
+	width: 25px;
+	background-size: 25px 25px;
+}
+#sel2{
+	height: 23px;
+	width: 23px;
+	background-size: 23px 23px;
+	background-image: url("list.png");
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+#sel2:checked{
+	height: 26px;
+	width: 26px;
+	background-size: 26px 26px;
+}
+.block{
+	height: 510px;
+	max-width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 13px;
+	overflow: hidden;
+	text-align: center;
+}
+.description{
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.colorDiv{
+    width:50px;
+    height:50px;
+    background-color:red;
+}
+#sel2:checked ~ main .block{
+   min-width: 100%;
+   text-align: justify;
+   height: 300px;
+}
+#sel2:checked ~ main img{
+	position: absolute;
+}
+#sel2:checked ~ main p{
+	text-align: center;
+}
+img{
+	height: 200px;
+	width: 300px;
+}
+img:hover{
+	opacity: 0.7;
+	transform: scale(1.1,1.1);
+	transition-duration: 1s; 
+}
+p{
+	font-family: Roboto, Courier;
+}
+
+.name:hover{
+	color: red;
+	transition-duration: 0.5s;
+}
+.starArea{
+	width: 125px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.star{
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-size: 25px 25px;
+	font-size: inherit;
+	margin: 0;
+}
+.star:focus{
+	outline: none;
+}
+.star:checked{
+	background-image: url("ystar.png");
+}
+.star:nth-of-type(1){
+	z-index: 5;
+	width: 25px;
+	left: 0;
+}
+.star:nth-of-type(2){
+	z-index: 4;
+	width: 50px;
+	left: 0;
+}
+.star:nth-of-type(3){
+	z-index: 3;
+	width: 75px;
+	left: 0;
+}
+.star:nth-of-type(4){
+	z-index: 2;
+	width: 100px;
+	left: 0;
+}
+.star:nth-of-type(5){
+	z-index: 1;
+	width: 125px;
+	left: 0;
+}
+.rating_group{
+	position: relative;
+	height: 25px;
+	width: 125px;
+	background-image: url("bstar.png");
+	background-size: 25px 25px;
+}
+.display{
+	right: 0;
+	position: absolute;
+}
