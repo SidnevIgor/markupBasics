@@ -1,0 +1,159 @@
+body{
+  display: grid;
+  grid-template-rows: 5% 90% 5%;
+  border-style: solid;
+  border-color: red;
+  margin: 0;
+  background-color: #d3d3d3;
+}
+hr{
+  border: 0;
+  border-top: 1px solid black;
+}
+.target{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-template-columns: 20% 60% 20%;
+  display: grid;
+}
+img{
+  margin: 0;
+}
+header{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+footer{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding-top: 1%;
+}
+.breed{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-style: solid;
+  border-color: yellow;
+}
+.rating{
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  border-style: solid;
+  border-color: green;
+}
+button{
+  display: block;
+  width: 100%;
+}
+main{
+  border-style: solid;
+  border-color: purple;
+  margin: 0;
+}
+.pics{
+  display: grid;
+  grid-template-rows: 300px;
+  margin: 0;
+  margin-top: 1.5%;
+}
+.row1{
+  display: grid;
+  grid-template-columns: 2% 30% 2% 64% 2%;
+  border-style: solid;
+  border-color: green;
+}
+.row2{
+  display: grid;
+  grid-template-columns: 2% 30% 2% 31% 2% 31% 2%;
+  border-style: solid;
+  border-color: green;
+}
+.row3{
+  display: grid;
+  grid-template-columns: 2% 63% 2% 31% 2%;
+  border-style: solid;
+  border-color: green;
+}
+.row4{
+  display: grid;
+  grid-template-columns: 2% 96% 2%;
+  border-style: solid;
+  border-color: green;
+}
+h3{
+  color: red;
+}
+h5{
+  display: inline-block;
+  font-size: 15px;
+}
+h4{
+  font-weight: lighter;
+}
+.rating{
+  display: flex;
+  flex-direction: column;
+}
+.rating-item{
+  border-style: solid;
+  border-color: orange;
+  height: 100px;
+}
+.rating-bar{
+  background-color: black;
+  height: 20px;
+  width: 70%;
+  display: inline-block;
+}
+.left-align{
+  position: relative;
+  display: inline-block;
+  left: 2%;
+}
+.right-align{
+  display: inline-block;
+  position: relative;
+  left: 66%;
+}
+.item1{
+  order: 1;
+}
+.item2{
+  order: 2;
+}
+.item3{
+  order: 3
+}
+.item4{
+  order: 4;
+}
+.desc:checked ~ .item1{
+  order: 2;
+}
+.desc:checked ~ .item2{
+  order: 3;
+}
+.desc:checked ~ .item3{
+  order: 1;
+}
+.desc:checked ~ .item4{
+  order: 4;
+}
+label{
+  display:block;
+  cursor:pointer;
+  padding: 2%;
+  font-size: 20px;
+}
+.breed input{
+  opacity:0.011;
+}
+input[type="radio"]:checked+label{
+  background: grey;
+}
+span #breed1:checked + main .row1 #test{
+  opacity: 50%;
+}
