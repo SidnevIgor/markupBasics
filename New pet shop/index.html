@@ -9,33 +9,39 @@
     <header>
       <h1>Бабуленькины котятки</h1>
     </header>
-    <section class="target">
-      <span class="breed">
-        <input type="radio" name="breedtype" id="breed1"/>
-        <label for="breed1">Абиссинская</label>
-        <input type="radio" name="breedtype" id="breed2"/>
-        <label for="breed2">Британская</label>
-        <input type="radio" name="breedtype" id="breed3"/>
-        <label for="breed3">Русская Голубая</label>
-        <input type="radio" name="breedtype" id="breed4"/>
-        <label for="breed4">Сиамская</label>
-      </span>
+      <input type="radio" name="breedtype" id="breed1"/>
+      <label for="breed1" id="label1">Абиссинская</label>
+      <input type="radio" name="breedtype" id="breed2"/>
+      <label for="breed2" id="label2">Британская</label>
+      <input type="radio" name="breedtype" id="breed3"/>
+      <label for="breed3" id="label3">Русская Голубая</label>
+      <input type="radio" name="breedtype" id="breed4"/>
+      <label for="breed4" id="label4">Сиамская</label>
+      <section class="target">
       <main>
         <div class="pics row1">
-          <img src="cat1.jpg" style="width: 100%; height: 100%; grid-column-start: 2; grid-column-end: 3;" id="test">
-          <img src="cat2.jpg" style="width: 100%; height: 100%; grid-column-start: 4; grid-column-end: 5;">
+          <img src="cat1.jpg" style="width: 100%; height: 100%; grid-column-start: 2; grid-column-end: 3;" id="cat1">
+          <div class="overlay1" style="grid-column-start: 2; grid-column-end: 3;">Gosha, 4 years</div>
+          <img src="cat2.jpg" style="width: 100%; height: 100%; grid-column-start: 4; grid-column-end: 5;" id="cat2">
+          <div class="overlay2" style="grid-column-start: 4; grid-column-end: 5;">Mosha, 5 years</div>
         </div>
         <div class="pics row2">
-          <img src="cat1.jpg" style="width: 100%; height: 100%; grid-column-start: 2; grid-column-end: 3;">
-          <img src="cat1.jpg" style="width: 100%; height: 100%; grid-column-start: 4; grid-column-end: 5;">
-          <img src="cat1.jpg" style="width: 100%; height: 100%; grid-column-start: 6; grid-column-end: 7;">
+          <img src="cat3.jpg" style="width: 100%; height: 100%; grid-column-start: 2; grid-column-end: 3;" id="cat3">
+          <div class="overlay1" style="grid-column-start: 2; grid-column-end: 3;">Tosha, 2 years</div>
+          <img src="cat4.jpg" style="width: 100%; height: 100%; grid-column-start: 4; grid-column-end: 5;" id="cat4">
+          <div class="overlay2" style="grid-column-start: 4; grid-column-end: 5;">Osha, 1 year</div>
+          <img src="cat5.jpg" style="width: 100%; height: 100%; grid-column-start: 6; grid-column-end: 7;" id="cat5">
+          <div class="overlay3" style="grid-column-start: 6; grid-column-end: 7;">Losha, 2 years</div>
         </div>
         <div class="pics row3">
-          <img src="cat2.jpg" style="width: 100%; height: 100%; grid-column-start: 2; grid-column-end: 3;">
-          <img src="cat1.jpg" style="width: 100%; height: 100%; grid-column-start: 4; grid-column-end: 5;">
+          <img src="cat6.jpeg" style="width: 100%; height: 100%; grid-column-start: 2; grid-column-end: 3;" id="cat6">
+          <div class="overlay1" style="grid-column-start: 2; grid-column-end: 3;">Bosha, 2 years</div>
+          <img src="cat7.jpg" style="width: 100%; height: 100%; grid-column-start: 4; grid-column-end: 5;" id="cat7">
+          <div class="overlay3" style="grid-column-start: 6; grid-column-end: 7;">Josh, 6 years</div>
         </div>
         <div class="pics row4" style="grid-template-rows: 370px;">
-          <img src="cat2.jpg" style="width: 100%; height: 100%; grid-column-start: 2; grid-column-end: 3;">
+          <img src="cat8.jpg" style="width: 100%; height: 100%; grid-column-start: 2; grid-column-end: 3;" id="cat8">
+          <div class="overlay1" style="grid-column-start: 2; grid-column-end: 3;">Roman, 2 years</div>
         </div>
       </main>
       <span class="rating">
@@ -44,25 +50,25 @@
         <input type="checkbox" class="desc">
         <div class="rating-item item1">
           <h4>Абиссинская</h4>
-          <div class="rating-bar">
+          <div class="rating-bar bar1">
           </div>
           <h5>9</h5>
         </div>
         <div class="rating-item item2">
           <h4>Британская</h4>
-          <div class="rating-bar">
+          <div class="rating-bar bar2">
           </div>
           <h5>8</h5>
         </div>
         <div class="rating-item item3">
           <h4>Русская Голубая</h4>
-          <div class="rating-bar">
+          <div class="rating-bar bar3">
           </div>
           <h5>10</h5>
         </div>
         <div class="rating-item item4">
           <h4>Сиамская</h4>
-          <div class="rating-bar">
+          <div class="rating-bar bar4">
           </div>
           <h5>4</h5>
         </div>

@@ -1,6 +1,7 @@
 body{
   display: grid;
   grid-template-rows: 5% 90% 5%;
+  grid-template-columns: 17% 83%;
   border-style: solid;
   border-color: red;
   margin: 0;
@@ -11,17 +12,19 @@ hr{
   border-top: 1px solid black;
 }
 .target{
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 80% 0%;
   display: grid;
 }
 img{
   margin: 0;
 }
 header{
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
   text-align: center;
@@ -29,6 +32,8 @@ header{
 footer{
   grid-row-start: 3;
   grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
   padding-top: 1%;
 }
 .breed{
@@ -36,6 +41,7 @@ footer{
   grid-column-end: 2;
   border-style: solid;
   border-color: yellow;
+  background-color: darkgrey;
 }
 .rating{
   grid-column-start: 3;
@@ -96,6 +102,7 @@ h4{
 .rating{
   display: flex;
   flex-direction: column;
+  background-color: darkgrey;
 }
 .rating-item{
   border-style: solid;
@@ -108,15 +115,27 @@ h4{
   width: 70%;
   display: inline-block;
 }
+.bar1{
+  background-image: linear-gradient(to right, green , white);
+}
+.bar2{
+  background-image: linear-gradient(to right, yellow , white);
+}
+.bar3{
+  background-image: linear-gradient(to right, green , white);
+}
+.bar4{
+  background-image: linear-gradient(to right, red , white);
+}
 .left-align{
   position: relative;
   display: inline-block;
-  left: 2%;
+  left: -20%;
 }
 .right-align{
   display: inline-block;
   position: relative;
-  left: 66%;
+  left: 50%;
 }
 .item1{
   order: 1;
@@ -129,6 +148,21 @@ h4{
 }
 .item4{
   order: 4;
+}
+.desc{
+  display: inline-block;
+  opacity: 1;
+  position: relative;
+  border-color: red;
+  border-style: solid;
+  margin-top: -16px;
+  margin-left: 60px;
+}
+b{
+  display: inline-block;
+  width: 120px;
+  border-color: orange;
+  border-style: solid;
 }
 .desc:checked ~ .item1{
   order: 2;
@@ -147,8 +181,32 @@ label{
   cursor:pointer;
   padding: 2%;
   font-size: 20px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 19px;
 }
-.breed input{
+#label2{
+  margin-top: 15%;
+}
+#label3{
+  margin-top: 30%;
+}
+#label4{
+  margin-top: 45%;
+}
+input{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 10%;
+  width: 100px;
+  border-color: green;
+  border-style: dotted;
+}
+input{
   opacity:0.011;
 }
 input[type="radio"]:checked+label{
@@ -156,4 +214,147 @@ input[type="radio"]:checked+label{
 }
 span #breed1:checked + main .row1 #test{
   opacity: 50%;
+}
+.overlay1, .overlay2, .overlay3{
+  display: none;
+}
+#cat1:hover ~ .overlay1{
+  display: inline-block;
+  position: absolute;
+  background-color: grey;
+  opacity: 70%;
+  color: white;
+  margin-top: 20%;
+  margin-left: 2%;
+  font-size: 23px;
+}
+#cat2:hover ~ .overlay2{
+  display: inline-block;
+  position: absolute;
+  background-color: grey;
+  opacity: 70%;
+  color: white;
+  margin-top: 20%;
+  margin-left: 23%;
+  font-size: 23px;
+}
+#cat3:hover ~ .overlay1{
+  display: inline-block;
+  position: absolute;
+  background-color: grey;
+  opacity: 70%;
+  color: white;
+  margin-top: 20%;
+  margin-left: 2%;
+  font-size: 23px;
+}
+#cat4:hover ~ .overlay2{
+  display: inline-block;
+  position: absolute;
+  background-color: grey;
+  opacity: 70%;
+  color: white;
+  margin-top: 20%;
+  margin-left: 23%;
+  font-size: 23px;
+}
+#cat5:hover ~ .overlay3{
+  display: inline-block;
+  position: absolute;
+  background-color: grey;
+  opacity: 70%;
+  color: white;
+  margin-top: 20%;
+  margin-left: 46%;
+  font-size: 23px;
+}
+#cat6:hover ~ .overlay1{
+  display: inline-block;
+  position: absolute;
+  background-color: grey;
+  opacity: 70%;
+  color: white;
+  margin-top: 20%;
+  margin-left: 2%;
+  font-size: 23px;
+}
+#cat7:hover ~ .overlay3{
+  display: inline-block;
+  position: absolute;
+  background-color: grey;
+  opacity: 70%;
+  color: white;
+  margin-top: 20%;
+  margin-left: 46%;
+  font-size: 23px;
+}
+#cat8:hover ~ .overlay1{
+  display: inline-block;
+  position: absolute;
+  background-color: grey;
+  opacity: 70%;
+  color: white;
+  margin-top: 20%;
+  margin-left: 2%;
+  font-size: 23px;
+}
+#breed1:checked ~ .target main .row1 #cat1{
+  opacity: 70%;
+}
+#breed1:checked ~ .target main .row2 #cat4{
+  opacity: 70%;
+}
+#breed1:checked ~ .target main .row2 #cat5{
+  opacity: 70%;
+}
+#breed1:checked ~ .target main .row3 #cat7{
+  opacity: 70%;
+}
+#breed1:checked ~ .target main .row4 #cat8{
+  opacity: 70%;
+}
+#breed2:checked ~ .target main .row1 #cat2{
+  opacity: 70%;
+}
+#breed2:checked ~ .target main .row2 #cat3{
+  opacity: 70%;
+}
+#breed2:checked ~ .target main .row2 #cat5{
+  opacity: 70%;
+}
+#breed2:checked ~ .target main .row3 #cat6{
+  opacity: 70%;
+}
+#breed3:checked ~ .target main .row1 #cat1{
+  opacity: 70%;
+}
+#breed3:checked ~ .target main .row1 #cat2{
+  opacity: 70%;
+}
+#breed3:checked ~ .target main .row2 #cat3{
+  opacity: 70%;
+}
+#breed3:checked ~ .target main .row2 #cat4{
+  opacity: 70%;
+}
+#breed3:checked ~ .target main .row2 #cat5{
+  opacity: 70%;
+}
+#breed3:checked ~ .target main .row3 #cat6{
+  opacity: 70%;
+}
+#breed3:checked ~ .target main .row3 #cat7{
+  opacity: 70%;
+}
+#breed4:checked ~ .target main .row1 #cat1{
+  opacity: 70%;
+}
+#breed4:checked ~ .target main .row2 #cat3{
+  opacity: 70%;
+}
+#breed4:checked ~ .target main .row2 #cat4{
+  opacity: 70%;
+}
+#breed4:checked ~ .target main .row2 #cat5{
+  opacity: 70%;
 }
