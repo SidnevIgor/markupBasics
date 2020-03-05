@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+}
+main{
+  background-color: #f6f5f3;
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+h1{
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+}
+.yandex-logo{
+  border-color: black;
+  border-style: solid;
+  float: right;
+  margin-right: 5%;
+}
+.promo{
+  border-color: purple;
+  border-style: solid;
+  width: 60%;
+  clear: both;
+  margin: 0 auto;
+}
+.cars-examples{
+  width: 100%;
+  text-align: left;
+  border-color: green;
+  border-style: solid;
+}
+.video{
+  width: 100%;
+  text-align: left;
+  border-color: red;
+  border-style: solid;
+}
