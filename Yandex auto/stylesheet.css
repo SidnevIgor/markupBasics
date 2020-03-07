@@ -18,20 +18,47 @@ h1{
   font-size: 36px;
   width: 100%;
   display: inline-block;
+  font-weight: 100;
 }
 h2{
   color: white;
   font-size: 29px;
   font-family: Arial, sans-serif;
   margin-top: 8px;
+  font-weight: 100;
 }
 h3{
   font-size: 47px;
   font-family: Arial, sans-serif;
+  font-weight: 100;
 }
 h4{
   font-family: Arial, sans-serif;
   font-size: 30px;
+  font-weight: 100;
+  margin-top: 0px;
+}
+h5{
+  font-family: Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 100;
+}
+p{
+  font-size: 16px;
+}
+button{
+  margin-bottom: 4%;
+  font-size: 36px;
+  background-color: yellow;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+.name{
+  height: 60px;
+  border-color: blue;
+  border-style: solid;
+  text-align: left;
 }
 p{
   font-size: 16px;
@@ -130,4 +157,10 @@ p{
   border-style: dashed;
   border-color: pink;
   width: 25%;
+}
+.icon{
+  border-style: dashed;
+  border-color: green;
+  height: 100px;
+  text-align: left;
 }
