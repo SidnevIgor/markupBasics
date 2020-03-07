@@ -9,9 +9,42 @@ main{
   margin-right: 1%;
   margin-bottom: 1%;
 }
+header{
+  display: flex;
+  justify-content: center;
+}
 h1{
   font-family: Arial, sans-serif;
   font-size: 36px;
+  width: 100%;
+  display: inline-block;
+}
+h2{
+  color: white;
+  font-size: 29px;
+  font-family: Arial, sans-serif;
+  margin-top: 8px;
+}
+h3{
+  font-size: 47px;
+  font-family: Arial, sans-serif;
+}
+h4{
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+p{
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+.description{
+  text-align: left;
+}
+.promo-phrase{
+  display: inline;
+  border-color: yellow;
+  border-style: solid;
+  width: 70%;
 }
 .yandex-logo{
   border-color: black;
@@ -22,19 +55,79 @@ h1{
 .promo{
   border-color: purple;
   border-style: solid;
-  width: 60%;
+  width: 80%;
   clear: both;
   margin: 0 auto;
 }
+.advantages{
+  border-color: purple;
+  border-style: solid;
+  width: 80%;
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+}
 .cars-examples{
-  width: 100%;
-  text-align: left;
+  width: 80%;
+  text-align: center;
   border-color: green;
   border-style: solid;
+  margin: 0 auto;
 }
 .video{
-  width: 100%;
-  text-align: left;
+  width: 80%;
+  text-align: center;
   border-color: red;
   border-style: solid;
+  margin: 0 auto;
+  position: relative;
+}
+.shadow{
+  width: 634px;
+  height: 50px;
+  background: rgba(0,0,0,.5);
+  margin-top: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.play-button{
+  background-image: url("play-button.png");
+  width: 127px;
+  height: 127px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
+.left-clicker{
+  border-color: red;
+  border-style: solid;
+  height: 270px;
+  display: inline-block;
+  position: relative;
+}
+.right-clicker{
+  border-color: red;
+  border-style: solid;
+  height: 270px;
+  display: inline-block;
+  position: relative;
+}
+.clickers{
+  position: relative;
+  margin-top: 220px;
+}
+.options{
+  border-color: green;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+}
+.block{
+  display: inline-block;
+  border-style: dashed;
+  border-color: pink;
+  width: 25%;
 }
