@@ -117,6 +117,9 @@ figure:active ~ #close-icon{
 .closing-option + #close-icon{
   cursor: pointer;
 }
+.closing-option:checked ~ img{
+  visibility:hidden;
+}
 .option-selected + img{
   cursor: pointer;
 }
