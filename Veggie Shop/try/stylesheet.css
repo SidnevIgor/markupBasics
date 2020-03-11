@@ -9,7 +9,8 @@ main{
   border-style: solid;
   border-color: firebrick;
   max-height: 520px;
-  width: 290%;
+  width: 1250px;
+  overflow: hidden;
 }
 figure{
   display: inline-block;
@@ -69,11 +70,11 @@ img{
   transition: 1s;
 }
 #radio2:checked~#figure1{
-  margin-left: -900px;
+  margin-left: -1200px;
   transition: 1s;
 }
 #radio3:checked~#figure1{
-  margin-left: -1800px;
+  margin-left: -2420px;
   transition: 1s;
 }
 #close-icon{
@@ -95,13 +96,20 @@ img{
 .closing-option + #close-icon{
   cursor: pointer;
 }
-.closing-option:checked ~ img{
+.closing-option:checked ~ label #close-icon{
   visibility:hidden;
 }
-.option-selected ~ img{
+.closing-option:checked ~ label #tomato{
+  height: 200px;
+  width: 280px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+.option-selected ~ label img{
   cursor: pointer;
 }
-.option-selected:checked ~ img{
+.option-selected:checked ~ label img{
   height: 400px;
   width: 560px;
   top: 10%;
@@ -109,7 +117,7 @@ img{
   position: absolute;
   z-index: 1;
 }
-.option-selected:checked ~ label .shadownew{
+.option-selected:checked ~ .shadownew{
   min-width: 100%;
   max-width: 100%;
   background-color: black;
